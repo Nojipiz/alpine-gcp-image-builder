@@ -39,7 +39,7 @@ variable "root_password" {
 
 variable "vm_name" {
   type    = string
-  default = "alpine-3.19.0-x86_64"
+  default = "alpine-3.20.3-x86_64"
 }
 
 source "qemu" "alpine_gcp" {
@@ -68,8 +68,8 @@ source "qemu" "alpine_gcp" {
   format            = "raw"
   headless          = "true"
   http_directory    = "http"
-  iso_checksum      = "95ed37b1e54b04aad1c6ff54a5fd60d904363a2a8810c3e3dfe4c2a29e94056b"
-  iso_url           = "https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.0-x86_64.iso"
+  iso_checksum      = "c66fc1e0470781f8ecbab8eb9cc8d906066171a5e0c6c1ab20aedc7061836d27"
+  iso_url           = "https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-virt-3.20.3-x86_64.iso"
   net_device        = "virtio-net"
   output_directory  = "build"
   shutdown_command  = "poweroff"
